@@ -362,9 +362,9 @@ function hide_img(obj){
 </div>
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-02-26 20:51:53</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.002105</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>1 <span class="tj failCase">Failure</span>4</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-03-04 00:03:04</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:49.493242</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>2</p>
 
 <p class='description'>输出用例执行结果</p>
 </div>
@@ -397,42 +397,35 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='failClass'>
-    <td>test_login.IntegerArithmeticTestCase</td>
-    <td>5</td>
-    <td>1</td>
-    <td>4</td>
+<tr class='passClass'>
+    <td>test_login.login_EmailTest</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',5)">详情</a></td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',2)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td><div class='testcase'>testAdd</div></td>
-    <td colspan='5' align='center'><span class='status passCase'>通过</span></td>
-    <td>无截图</td>
-</tr>
-
-<tr id='ft1.2' class='none'>
-    <td ><div class='testcase'>testMultiply</div></td>
+    <td ><div class='testcase'>test_loginFail: 登陆失败case</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        失败</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a></span>
 
-    <div id='div_ft1.2' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.2: Traceback (most recent call last):
-  File "F:\pythonDemo\seleniumTest1\case\test_login.py", line 11, in testMultiply
-    self.assertEqual((5 * 8), 70)
-AssertionError: 40 != 70
+pt1.1: 用例执行前执行一次
+登录QQ邮箱
+用例执行后执行一次
 
 
         </pre>
@@ -443,86 +436,25 @@ AssertionError: 40 != 70
     <td>无截图</td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td ><div class='testcase'>testMultiply: _retry:1</div></td>
+<tr id='pt1.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_loginSuccess: 登陆成功case</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        失败</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a></span>
 
-    <div id='div_ft1.3' class="popup_window">
+    <div id='div_pt1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.3: Traceback (most recent call last):
-  File "F:\pythonDemo\seleniumTest1\case\test_login.py", line 11, in testMultiply
-    self.assertEqual((5 * 8), 70)
-AssertionError: 40 != 70
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-    <td>无截图</td>
-</tr>
-
-<tr id='ft1.4' class='none'>
-    <td ><div class='testcase'>testMultiply: _retry:2</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
-        失败</a></span>
-
-    <div id='div_ft1.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.4: Traceback (most recent call last):
-  File "F:\pythonDemo\seleniumTest1\case\test_login.py", line 11, in testMultiply
-    self.assertEqual((5 * 8), 70)
-AssertionError: 40 != 70
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-    <td>无截图</td>
-</tr>
-
-<tr id='ft1.5' class='none'>
-    <td ><div class='testcase'>testMultiply: _retry:3</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <span class='status failCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
-        失败</a></span>
-
-    <div id='div_ft1.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.5: Traceback (most recent call last):
-  File "F:\pythonDemo\seleniumTest1\case\test_login.py", line 11, in testMultiply
-    self.assertEqual((5 * 8), 70)
-AssertionError: 40 != 70
+pt1.2: 用例执行前执行一次
+QQ邮箱
+用例执行后执行一次
 
 
         </pre>
@@ -535,9 +467,9 @@ AssertionError: 40 != 70
 
 <tr id='total_row'>
     <th>统计</th>
-    <th>5</th>
-    <th>1</th>
-    <th>4</th>
+    <th>2</th>
+    <th>2</th>
+    <th>0</th>
     <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
@@ -545,7 +477,7 @@ AssertionError: 40 != 70
 </table>
 <script>
     showCase(1);
-    drawCircle(1, 4, 0);
+    drawCircle(2, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

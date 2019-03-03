@@ -11,26 +11,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/seleniumTest1$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1551620625340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/seleniumTest1$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1551185513115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/seleniumTest1$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1551623794669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/seleniumTest1$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1551628984044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/seleniumTest1$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1551628922700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test_login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/case/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+            <state relative-caret-position="95">
+              <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -51,8 +41,20 @@
       <file leaf-file-name="run_all.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="95">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -73,8 +75,8 @@
       <file leaf-file-name="htmlTestRunner_cn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/htmlTestRunner_cn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21945">
-              <caret line="1108" column="38" lean-forward="false" selection-start-line="1108" selection-start-column="38" selection-end-line="1108" selection-end-column="38" />
+            <state relative-caret-position="266">
+              <caret line="1118" column="34" lean-forward="false" selection-start-line="1118" selection-start-column="34" selection-end-line="1118" selection-end-column="34" />
               <folding>
                 <element signature="e#3463#3478#0" expanded="true" />
               </folding>
@@ -101,6 +103,7 @@
       <list>
         <option value="$PROJECT_DIR$/common/htmlTestRunner_cn.py" />
         <option value="$PROJECT_DIR$/run_all.py" />
+        <option value="$PROJECT_DIR$/common/base.py" />
         <option value="$PROJECT_DIR$/case/test_login.py" />
       </list>
     </option>
@@ -189,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_login.py">
+  <component name="RunManager" selected="Python.run_all">
     <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,9 +253,9 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_login.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_login" />
-        <item index="2" class="java.lang.String" itemvalue="Python.run_all" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run_all" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_login.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_login" />
       </list>
     </recent_temporary>
   </component>
@@ -273,21 +276,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 17m 50s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 19m 31s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 23m 03s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 27m 58s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 29m 24s.xml">
-      <configuration name="Unittests in test_login.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 31m 13s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
@@ -301,6 +289,21 @@
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 37m 46s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 23h 57m 04s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 23h 59m 01s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.04 at 00h 00m 10s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.04 at 00h 01m 53s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.04 at 00h 02m 56s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -481,39 +484,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/htmlTestRunner_cn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21945">
-          <caret line="1108" column="38" lean-forward="false" selection-start-line="1108" selection-start-column="38" selection-end-line="1108" selection-end-column="38" />
-          <folding>
-            <element signature="e#3463#3478#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,10 +500,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/python/Lib/site-packages/selenium/webdriver/common/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="163" column="0" lean-forward="true" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/htmlTestRunner_cn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1118" column="34" lean-forward="false" selection-start-line="1118" selection-start-column="34" selection-end-line="1118" selection-end-column="34" />
+          <folding>
+            <element signature="e#3463#3478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/case/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="36" column="42" lean-forward="false" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        <state relative-caret-position="95">
+          <caret line="41" column="43" lean-forward="true" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
