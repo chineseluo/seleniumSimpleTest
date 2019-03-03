@@ -27,12 +27,14 @@ class login_EmailTest(unittest.TestCase):
             return login_title
         except:
             return " "
+    def login(self,username,password):
+        self.driver.switch_to.frame(self.driver.find_element_by_id("login_frame"))
+        self.driver.find_element_by_id("u").send_keys(username)
+        self.driver.find_element_by_id("p").send_keys(password)
+        self.driver.find_element_by_id("login_button").click()
 
     def test_loginQQEmail(self):
-        self.driver.switch_to.frame(self.driver.find_element_by_id("login_frame"))
-        self.driver.find_element_by_id("u").send_keys("848257135")
-        self.driver.find_element_by_id("p").send_keys("luo@17810538900")
-        self.driver.find_element_by_id("login_button").click()
+        self.login("848257135","##########")
         time.sleep(2)
         login_title=self.is_login_success()
         self.driver.switch_to.frame(self.driver.find_element_by_id("mainFrame"))
