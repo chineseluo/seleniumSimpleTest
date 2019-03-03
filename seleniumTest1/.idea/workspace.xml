@@ -12,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/seleniumTest1$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1551620625340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/seleniumTest1$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1551185513115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/seleniumTest1$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1551619971475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/seleniumTest1$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1551623794669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -29,11 +29,21 @@
       <file leaf-file-name="test_login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/case/test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="209">
+              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webdriver.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/python/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="257" column="65" lean-forward="false" selection-start-line="257" selection-start-column="65" selection-end-line="257" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,7 +111,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-60" />
     <option name="y" value="65" />
     <option name="width" value="1346" />
@@ -179,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_login">
+  <component name="RunManager" selected="Python tests.Unittests in test_login.py">
     <configuration name="run_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,8 +250,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_login" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_login.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_login.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_login" />
         <item index="2" class="java.lang.String" itemvalue="Python.run_all" />
       </list>
     </recent_temporary>
@@ -263,33 +273,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_login_py - 2019.02.25 at 22h 16m 27s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 17m 50s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.02.25 at 22h 22m 16s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 19m 31s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.02.25 at 22h 23m 04s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 23m 03s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 21h 28m 41s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 27m 58s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 21h 29m 07s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 29m 24s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 21h 29m 40s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 31m 13s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 21h 32m 10s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 32m 13s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 21h 32m 52s.xml">
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 34m 49s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 36m 08s.xml">
+      <configuration name="Unittests in test_login.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_login_py - 2019.03.03 at 22h 37m 46s.xml">
       <configuration name="Unittests in test_login.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -322,7 +338,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -501,10 +517,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/python/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="257" column="65" lean-forward="false" selection-start-line="257" selection-start-column="65" selection-end-line="257" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/case/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        <state relative-caret-position="209">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
