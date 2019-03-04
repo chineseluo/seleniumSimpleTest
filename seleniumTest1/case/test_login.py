@@ -21,6 +21,7 @@ class login_EmailTest(unittest.TestCase):
 
     def tearDown(self):
         print("用例执行后执行一次")
+        self.driver.close()
         self.driver.quit()
 
 
