@@ -47,7 +47,7 @@ class login_EmailTest(unittest.TestCase):
 
     def test_loginSuccess(self):
         """登陆成功case"""
-        self.login("848257135","luo@17810538900")
+        self.login("848257135","###########")
         time.sleep(2)
         login_title=self.is_login_success()
         print(login_title)
