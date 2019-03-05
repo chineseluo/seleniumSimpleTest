@@ -1,5 +1,7 @@
 import unittest
 from selenium import webdriver
+from common.base import Base
+from selenium.webdriver.common.by import By
 import time
 
 
@@ -16,6 +18,7 @@ class login_EmailTest(unittest.TestCase):
     def setUp(self):
         print("用例执行前执行一次")
         self.driver = webdriver.Chrome()
+        self.qqEmail=Base(self.driver)
         self.driver.get("https://mail.qq.com/cgi-bin/loginpage")
         time.sleep(2)
 
@@ -33,18 +36,25 @@ class login_EmailTest(unittest.TestCase):
             return " "
 
     def login(self,username,password):
-        self.driver.switch_to.frame(self.driver.find_element_by_id("login_frame"))
-        self.driver.find_element_by_id("u").send_keys(username)
-        self.driver.find_element_by_id("p").send_keys(password)
-        self.driver.find_element_by_id("login_button").click()
+        locator_login_frame=(By.ID,"login_frame")
+        self.qqEmail.switchToFrame(locator_login_frame)
+        locator_username=(By.ID,"u")
+        self.qqEmail.sendKey(locator_username,username)
+        locator_password=(By.ID,"p")
+        self.qqEmail.sendKey(locator_password,password)
+        locator_login_button=(By.ID,"login_button")
+        self.qqEmail.click(locator_login_button)
 
     def test_loginSuccess(self):
         """登陆成功case"""
-        self.login("848257135","#########")
+        self.login("848257135","luo@17810538900")
         time.sleep(2)
         login_title=self.is_login_success()
-        self.driver.switch_to.frame(self.driver.find_element_by_id("mainFrame"))
-        self.driver.find_element_by_id("today_alias").click()
+        print(login_title)
+        locator_mainFrame=(By.ID,"mainFrame")
+        self.qqEmail.switchToFrame(locator_mainFrame)
+        locator_today_alias=(By.ID,"today_alias")
+        self.qqEmail.click(locator_today_alias)
         print(login_title)
         self.assertEqual("QQ邮箱",login_title)
 
