@@ -1,7 +1,10 @@
+# coding:utf-8
 import unittest
 from selenium import webdriver
 from common.base import Base
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 

@@ -1,7 +1,11 @@
+# coding:utf-8
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.select import Select
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class Base:
@@ -60,13 +64,37 @@ class Base:
         elem = self.findElement(locator)
         self.driver.switch_to.frame(elem)
 
+    def elementIsBeSelected(self,locator):
+        """
+        判断元素是否被选中，用于单选或者复选框
+        :param locator:  传入定位器参数locator=(By.XX,"value")
+        :return: 返回布尔值True，False
+        """
+        elem=self.findElement(locator)
+        result=elem.is_selecter()
+        return result
+
+    def isElementExist(self,locator):
+        """
+        判断元素是否存在
+        :param locator: 传入定位器参数locator=(By.XX,"value")
+        :return: 返回布尔值True，False
+        """
+        try:
+            elem=self.findElement(locator)
+            return True
+        except:
+            return False
+
 if __name__=="__main__":
     driver=webdriver.Chrome()
-    driver.get("https://mail.qq.com/cgi-bin/loginpage")
-    driver.switch_to.frame(driver.find_element_by_id("login_frame"))
-    qqEmail=Base(driver)
-    locator=(By.ID, "u")
-    qqEmail.findElement(locator).send_keys("848257135")
+    driver.get("https://www.baidu.com")
+    baidu=Base(driver)
+    locator=(By.LINK_TEXT,"设置")
+    elen=baidu.findElement(locator)
+    ActionChains(driver).move_to_element(elen).perform()
+    locator2=(By.LINK_TEXT,"搜索设置")
+    baidu.click(locator2)
     driver.close()#大家在进行自动化测试的时候，一定要记得关闭浏览器，杀掉进程
     driver.quit()
 
