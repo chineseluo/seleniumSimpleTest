@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class Base:
-    def __init__(self,driver):
+    def __init__(self,driver:webdriver.Chrome):
         self.driver=driver
         self.timeout = 10
         self.poll_frequency = 0.5
@@ -33,7 +33,7 @@ class Base:
         :param locator: 传入定位器参数locator=(By.XX,"value")
         :return: 返回元素对象列表
         """
-        elem = WebDriverWait(driver, self.timeout, self.poll_frequency).until(lambda x: x.find_elements(*locator))
+        elem = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(lambda x: x.find_elements(*locator))
         return elem
 
     def sendKey(self,locator,value):
@@ -87,15 +87,15 @@ class Base:
             return False
 
 if __name__=="__main__":
-    driver=webdriver.Chrome()
-    driver.get("https://www.baidu.com")
-    baidu=Base(driver)
+
+    baidu=Base(webdriver.Chrome())
+    baidu.driver.get("https://www.baidu.com")
     locator=(By.LINK_TEXT,"设置")
     elen=baidu.findElement(locator)
-    ActionChains(driver).move_to_element(elen).perform()
+    ActionChains(baidu.driver).move_to_element(elen).perform()
     locator2=(By.LINK_TEXT,"搜索设置")
     baidu.click(locator2)
-    driver.close()#大家在进行自动化测试的时候，一定要记得关闭浏览器，杀掉进程
-    driver.quit()
+    baidu.driver.close()#大家在进行自动化测试的时候，一定要记得关闭浏览器，杀掉进程
+    baidu.driver.quit()
 
 
