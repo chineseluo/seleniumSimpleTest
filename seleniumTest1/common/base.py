@@ -9,12 +9,12 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class Base:
-    def __init__(self,driver:webdriver.Chrome):
+    def __init__(self, driver:webdriver.Chrome):
         self.driver=driver
         self.timeout = 10
         self.poll_frequency = 0.5
 
-    def findElement(self,locator):
+    def findElement(self, locator):
         """
 
         :param locator: 传入定位器参数locator=(By.XX,"value")
@@ -23,9 +23,14 @@ class Base:
         #方法二次封装Demo
         #WebDriverWait(self, driver, timeout, poll_frequency=POLL_FREQUENCY, ignored_exceptions=None)
         #elen = WebDriverWait(driver, timeout, t).until(lambda x: x.findElenmentById("name"))元素显示等待
-        #locator定位器，locator(by,value)即是传入元素定位器和元素值
-        elem=WebDriverWait(self.driver,self.timeout,self.poll_frequency).until(lambda x:x.find_element(*locator))
-        return elem
+        #locator定位器，locator(by,value)即是传入元素定位器和元素值)
+        try:
+            elem = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(lambda x: x.find_element(*locator))
+            return elem
+        except:
+            return print("定位不到元素")
+
+
 
     def findElements(self, locator):
         """
@@ -55,7 +60,7 @@ class Base:
         elem=self.findElement(locator)
         elem.click()
 
-    def switchToFrame(self,locator):
+    def switchToFrame(self, locator):
         """
 
         :param locator: 传入定位器参数locator=(By.XX,"value")
@@ -86,12 +91,15 @@ class Base:
         except:
             return False
 
+
+
 if __name__=="__main__":
 
     baidu=Base(webdriver.Chrome())
     baidu.driver.get("https://www.baidu.com")
     locator=(By.LINK_TEXT,"设置")
     elen=baidu.findElement(locator)
+    print(elen)
     ActionChains(baidu.driver).move_to_element(elen).perform()
     locator2=(By.LINK_TEXT,"搜索设置")
     baidu.click(locator2)
