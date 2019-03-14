@@ -24,11 +24,15 @@ class Base:
         #WebDriverWait(self, driver, timeout, poll_frequency=POLL_FREQUENCY, ignored_exceptions=None)
         #elen = WebDriverWait(driver, timeout, t).until(lambda x: x.findElenmentById("name"))元素显示等待
         #locator定位器，locator(by,value)即是传入元素定位器和元素值)
-        try:
-            elem = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(lambda x: x.find_element(*locator))
-            return elem
-        except:
-            return print("定位不到元素")
+        if not isinstance(locator,tuple):
+            print('locator参数类型错误，必须传元祖类型：locator=(By.XX,"value")')
+        else:
+            print("正在定位元素信息：定位方式->%s,value值->%s"%(locator[0],locator[1]))
+            try:
+                elem = WebDriverWait(self.driver, self.timeout, self.poll_frequency).until(lambda x: x.find_element(*locator))
+                return elem
+            except:
+                return print("定位不到元素")
 
 
 
@@ -91,6 +95,69 @@ class Base:
         except:
             return False
 
+    def move_to_element(self,locator):
+        """
+        鼠标悬停事件操作
+        :param locator: 传入定位器参数locator=(By.XX,"value")
+        :return:
+        """
+        elem=self.findElement(locator)
+        ActionChains(self.driver).move_to_element(elem).perform()
+
+    def select_by_index(self,locator,index=0):
+        """
+        根据索引选中下拉框
+        :param locator:
+        :param index:
+        :return:
+        """
+        elem=self.findElement(locator)
+        Select(elem).select_by_index(index)
+
+    def select_by_value(self,locator,value):
+        """
+        根据下拉选项的value值选中下拉框
+        :param locator:
+        :param value:
+        :return:
+        """
+        elem=self.findElement(locator)
+        Select(elem).select_by_value(value)
+
+    def select_by_text(self,locator,text):
+        """
+        根据下拉选项的文本值选中下拉框
+        :param locator:
+        :param text:
+        :return:
+        """
+        elem=self.findElement(locator)
+        Select(elem).select_by_visible_text(text)
+
+    def js_scroll_bottom(self):
+        """
+        滚动到屏幕底部
+        :return:
+        """
+        js_height="window.scrollTo(0,document.body.scrollHeight)"
+        self.driver.execute_script(js_height)
+
+    def js_focus(self,locator):
+        """
+        聚焦元素,执行滚动事件到元素出现的位置
+        :param locator:
+        :return:
+        """
+        target=self.findElement(locator)
+        self.driver.execute_script("arguments[0].scrollIntoView();",target)
+
+    def js_scroll_top(self):
+        """
+        回到顶部
+        :return:
+        """
+        js_top="window.scrollTo(0,0)"
+        self.driver.execute_script(js_top)
 
 
 if __name__=="__main__":
